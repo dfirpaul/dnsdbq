@@ -1,0 +1,5 @@
+dnsdbq (1.0.0-1) unstable; urgency=medium
+
+  * Initial debian package release 
+
+ -- Farsight Security, Inc. <software@farsightsecurity.com>  Tue, 27 Mar 2018 10:07:59 -0400

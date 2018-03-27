@@ -1,0 +1,23 @@
+Source: dnsdbq
+Section: database
+Priority: optional
+Maintainer: Farsight Security, Inc. <software@farsightsecurity.com>
+Build-Depends: debhelper (>= 9), libjansson-dev (>= 2.5),
+ libcurl4-openssl-dev (>= 7.28)
+Standards-Version: 3.9.8
+Homepage: https://github.com/dnsdb/dnsdbq
+
+Package: dnsdbq
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: DNSDB query tool
+ dnsdbq constructs and issues queries to the Farsight DNSDB and displays
+ responses. It is commonly used as a production command line interface to
+ the DNSDB API server.
+ DNSDB is a database that stores and indexes both the passive DNS data
+ available via Farsight Security's Security Information Exchange as well
+ as the authoritative DNS data that various zone operators make available.
+ DNSDB makes it easy to search for individual DNS RRsets and provides
+ additional metadata for search results such as first seen and last seen
+ timestamps as well as the DNS bailiwick associated with an RRset. DNSDB
+ also has the ability to perform inverse or rdata searches.
